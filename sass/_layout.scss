@@ -1,0 +1,114 @@
+.container {
+    max-width: 120rem;
+    margin: 8rem auto;
+    background-color: var(--color-grey-light-1);
+    box-shadow: 0 2rem 6rem rgba(0,0,0,.3);
+    min-height: 80rem;
+
+    @media only screen and (max-width: $bp-largest) {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.content {
+    display: flex;
+
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+    }
+
+ 
+}
+
+.header {
+    font-size: 14px;
+    height: 8rem;
+    background-color: #fff;
+    border-bottom: 1px solid var(--color-grey-light-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @media only screen and (max-width: $bp-smaller) {
+            
+       flex-wrap: wrap;
+       margin-bottom: 2rem;
+       border: none;
+       flex: 1; 
+        
+       }
+}
+
+.sidebar {
+    --color-grey-dark-1: #333;
+    background-color: var(--color-grey-dark-1);
+    flex: 0 0 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotel-view {
+    background-color:var(--color-white);
+    flex: 1;
+}
+
+.detail {
+
+    display: flex;
+    padding: 4.5rem;
+    background-color: var(--color-grey-light-1);
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2rem; 
+    }
+    
+    @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+        
+    }
+
+}
+
+.description {
+
+    flex: 0 0 60%;
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    margin-right: 2rem;
+    border-top-left-radius: 10px;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2rem;
+        margin-right: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 1rem;
+        flex:1; 
+        border-top-left-radius: 0px;
+        margin-right: 0rem;
+    }
+
+
+  
+
+}
+
+.user-reviews{
+    flex: 1;
+    font-size: 1.1rem; 
+
+}
+
+
